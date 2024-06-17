@@ -1,0 +1,49 @@
+tcom tkinter import StringVar, Label, Entry, Button
+
+from qui import create gui from timer logic import countdown_tiner
+
+root create gul
+
+hour StringVar() minute- second - Stringvar()
+
+hour.set("00") minute.set("00")
+
+second.set("00")
+
+current time label - Label( root.
+
+text-"Current Time: 00:00:00", font("Arial", 14,
+
+bg-87CEEB
+
+current_time_label.place (relx-0.5. rely-0.2. anchor-"center")
+
+hour box Entry(
+
+root
+
+width 3,
+
+hour box.place(x=0, у-во
+
+mina box root, Entryf
+
+width-3.
+
+font-("Arial", 18 tontvariable minute
+
+mina box.place (x130, y-90)
+
+Entry(
+
+10
+
+sec box.place(x-100, y-0)
+
+btn Buttontroot, text Set Time Countdown', bd-'5", command-lanbda: countdown timer (root, hour,
+
+btn.place (x-80, у-120)
+
+root.mainloop()
+
+kinute
