@@ -1,0 +1,8 @@
+# gui.py
+from tkinter import
+def create_gui():
+root = Tk()
+root.geometry("300x300")
+root.title("Countdown timer")
+root.config(bg='#87CEEB')
+return root
