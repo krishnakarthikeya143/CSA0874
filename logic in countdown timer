@@ -1,29 +1,21 @@
 import time
 
-from tkinter import messagebox
+def countdown_timer(seconds):
+    while seconds:
+        mins, secs = divmod(seconds, 60)
+        hours, mins = divmod(mins, 60)
+        timer = f'{hours:02d}:{mins:02d}:{secs:02d}'
+        print(timer, end="\r")
+        time.sleep(1)
+        seconds -= 1
+    
+    print("Time's up!")
 
-def countdown_timer (root, hour, minute, second, current_time_label):
+if __name__ == "__main__":
+    try:
+        total_seconds = int(input("Enter the time in seconds: "))
+        countdown_timer(total_seconds)
+    except ValueError:
+        print("Please enter a valid number.")
 
-try:
 
-user input except int (hour.get()) 3600+ int (minute.get()) 60+ int(second.get())
-
-return
-
-ValueError: messagebox.showwarning('', 'Invalid Input!")
-
-while user input > -1: mins, secs divmod (user_input, 60)
-
-hours, mins divmod (mins, 60) hour.set("(0:02d)".format (hours))
-
-minute.set("{0:02d)".format (mins))
-
-second.set("(0:02d)".format(secs)) current time time.strftime("%H:%M:45")
-
-current time_label.config(text-f"Current Time: (current_time)"} root.update()
-
-time.sleep(1)
-
-If user input == 0: messagebox.showinfo ("Time Countdown", "Time Over")
-
-user input1
